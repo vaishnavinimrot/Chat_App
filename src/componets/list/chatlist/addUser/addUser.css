@@ -1,0 +1,94 @@
+.addUser {
+    width: 400px; /* Increased width for a larger box */
+    height: max-content; /* Adjust height to content */
+    border-radius: 10px;
+    padding: 40px;
+    background-color: rgba(17, 25, 40, 0.781);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  
+    /* Form Styling */
+    form {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    input {
+      background-color: white; /* Set background color to white */
+      border-radius: 10px;
+      padding: 15px;
+      border: none;
+      outline: none;
+      width: 150px; /* Set width */
+      color: rgb(10, 10, 10);
+
+    }
+  
+    button {
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      background-color: #1a73e8;
+      padding: 15px 30px; /* Adjust padding */
+      min-width: 120px;
+    }
+  }
+  
+  /* User Section Styling */
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  
+    .detail {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: transparent;
+  
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+   
+  
+    button {
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      background-color: #1a73e8;
+      padding: 15px 30px; /* Adjust padding */
+      min-width: 120px;
+    }
+  }
+}
+  
+  /* New Styling for Name and Button in Same Line */
+  .search {
+    display: flex;
+    justify-content: space-between; /* Align the input and button horizontally */
+    align-items: center;
+    width: 100%;
+    background-color: transparent; 
+  }
+  
+  .searchBar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+  }
+  
+  

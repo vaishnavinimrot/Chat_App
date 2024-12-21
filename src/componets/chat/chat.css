@@ -1,0 +1,192 @@
+.chat {
+    flex: 2;
+    border-left: 1px solid #dddddd35;
+    border-right: 1px solid #dddddd35;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd35;
+}
+
+.userr {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.userr img {
+    width: 50px; /* Smaller size */
+    height: 50px; /* Smaller size */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover;
+}
+
+.message img {
+    width: 40px; /* Smaller size */
+    height: 40px; /* Smaller size */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.texts span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.texts p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #a5a5a5;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.center {
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Styling the scrollbar */
+.center::-webkit-scrollbar {
+    width: 6px; /* Change the width of the scrollbar */
+}
+
+.center::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0; /* Color of the thumb (scroll handle) */
+    border-radius: 3px; /* Rounded corners for the thumb */
+}
+
+.center::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Color of the track (area the thumb slides on) */
+    border-radius: 3px; /* Rounded corners for the track */
+}
+
+/* Message layout */
+.message {
+    display: flex;
+    gap: 20px;
+    max-width: 70%;
+    align-items: flex-start;
+}
+
+/* Align 'own' messages to the right */
+.message.own {
+    align-self: flex-end; /* Align the message box to the right */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 70%;
+}
+
+/* Style for text in messages */
+.message .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 100%;
+}
+
+/* Styling message text */
+.message .texts p {
+    background-color: rgba(17, 25, 40, 0.5);
+    border-radius: 10px;
+    padding: 15px 20px;
+    max-width: 100%;
+    color: white;
+}
+
+/* Styling message time text */
+.message .texts span {
+    font-size: 13px;
+    color: #a5a5a5;
+}
+
+/* Style for own messages */
+.message.own .texts p {
+    background-color: #5183fe;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Bottom section styling */
+.bottom {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid #dddddd35;
+    margin-top: auto;
+}
+
+.icons img,
+.emoji img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.emoji {
+    position: relative;
+}
+
+input {
+    flex: 1;
+    background-color: rgba(17, 25, 40, 0.5);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.sendButton {
+    background-color: #5183fe;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.picker {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    z-index: 10;
+}
+
+/* For images inside message */
+.message .texts img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: red;
+}
